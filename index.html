@@ -1,0 +1,735 @@
+<!doctype html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>CSE_Commerce</title>
+    <link rel="icon" href="../image/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
+  </head>
+
+  <body class="bg-gray-100">
+    <nav class="bg-gray-700 p-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="flex items-center">
+          <img src="../image/logo.png" alt="Logo" class="w-12 h-12 rounded-b-full">
+        </div>
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white text-2xl">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <div class="hidden md:flex space-x-6 text-white" id="menu">
+          <a href="" class="hover:text-gray-300">Home</a>
+          <a href="#cat" class="hover:text-gray-300">Categories</a>
+          <a href="#about-us" class="hover:text-gray-300">About Us</a>
+          <a href="#contact" class="hover:text-gray-300">Contact Us</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-2">
+          <input type="text" placeholder="Search" class="px-3 py-1 w-32 md:w-48 rounded-md border focus:outline-none">
+          <button class="px-3 py-1 bg-gray-500 text-white rounded-md hover:bg-gray-600">Search</button>
+          <i class="fa-solid fa-cart-shopping text-white"></i>
+          <i class="fa-solid fa-heart text-red-500"></i>
+        </div>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 text-white p-4 space-y-2">
+        <a href="#" class="block hover:text-gray-300">Home</a>
+        <a href="#cat" class="block hover:text-gray-300">Categories</a>
+        <a href="#about-us" class="block hover:text-gray-300">About Us</a>
+        <a href="#contact" class="block hover:text-gray-300">Contact Us</a>
+      </div>
+    </nav>
+
+    <section>
+      <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-[250px] md:h-[500px] overflow-hidden rounded-lg">
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../image/Ban1.jpg" class="block w-full h-full object-cover" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../image/Ban2.jpg" class="block w-full h-full object-cover" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../image/Ban3.jpg" class="block w-full h-full object-cover" alt="...">
+          </div>
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../image/Ban4.jpg" class="block w-full h-full object-cover" alt="...">
+          </div>
+        </div>
+        <button
+          class="absolute top-1/2 left-2 -translate-y-1/2 z-30 h-8 w-8 bg-black/50 rounded-full hover:bg-black/70 text-white"
+          data-carousel-prev>
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button
+          class="absolute top-1/2 right-2 -translate-y-1/2 z-30 h-8 w-8 bg-black/50 rounded-full hover:bg-black/70 text-white"
+          data-carousel-next>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="bg-gradient-to-br from-blue-500 to-gray-400 py-10 text-center shadow-black shadow-2xl rounded-lg mt-4 mb-10">
+      <div class="container mx-auto text-center px-4">
+        <h2
+          class="text-black-900 font-sans text-3xl md:text-5xl font-bold italic mb-6 transition-transform duration-300 hover:scale-110">
+          Our Trusted Brand</h2>
+        <div class="flex flex-wrap justify-center items-center gap-6 mt-10 md:mt-20">
+          <img src="https://fabrilife.com/img/fabrilife.svg" alt="Fabrilife"
+            class="h-10 md:h-12 transition-transform duration-300 hover:scale-110">
+          <img src="https://www.hublot.com/themes/custom/hublot/images/hublot-logo-upd.svg" alt="Hublot"
+            class="h-10 md:h-12 transition-transform duration-300 hover:scale-110">
+          <img
+            src="https://titanwatches.com.bd/cdn/shop/files/0cd04b4aecd787e7a2595caac9dea104.png?v=1707895228&width=255"
+            alt="Titan" class="h-10 md:h-12 transition-transform duration-300 hover:scale-110">
+          <img src="https://storage.apex4u.com/apex_logo_website_170x80.png" alt="Apex"
+            class="h-10 md:h-12 transition-transform duration-300 hover:scale-110">
+          <img src="https://www.batabd.com/cdn/shop/files/logo-2_d42c63ce-1f56-4af2-a68f-a4cc3a91bd07.png?v=1614332440"
+            alt="Bata" class="h-10 md:h-12 transition-transform duration-300 hover:scale-110">
+          <img src="https://hatil.com/images/logo.png" alt="Hatil"
+            class="h-10 md:h-12 transition-transform duration-300 hover:scale-110">
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gradient-to-t from-cyan-300 to-green-400 text-center py-12 mt-5 px-4">
+      <h2
+        class="text-gray-800 text-3xl md:text-4xl font-bold italic mb-6 transition-transform duration-300 hover:scale-110">
+        What We Offer</h2>
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4 md:px-6">
+        <div
+          class="bg-gray-300 p-6 rounded-lg text-center shadow-black shadow-2xl transition-transform duration-300 hover:scale-110">
+          <div class="flex justify-center">
+            <img src="https://img.icons8.com/ios/50/shopping-bag.png" alt="Product Catalog">
+          </div>
+          <h3 class="text-lg font-bold mt-4">Product Catalog</h3>
+          <p class="text-black mt-2">Browse through thousands of products with detailed descriptions and reviews.</p>
+        </div>
+        <div
+          class="bg-gray-300 p-6 rounded-lg shadow-black shadow-2xl transition-transform duration-300 hover:scale-110 text-center">
+          <div class="flex justify-center">
+            <img src="https://img.icons8.com/?size=50&id=77125&format=png&color=000000" alt="Secure Payment">
+          </div>
+          <h3 class="text-lg font-bold mt-4">Secure Payment</h3>
+          <p class="text-black mt-2">Your transactions are encrypted and protected for a safe shopping experience.</p>
+        </div>
+        <div
+          class="bg-gray-300 p-6 rounded-lg shadow-black shadow-2xl transition-transform duration-300 hover:scale-110 text-center">
+          <div class="flex justify-center">
+            <img src="https://img.icons8.com/ios/50/delivery.png" alt="Fast Delivery">
+          </div>
+          <h3 class="text-lg font-bold mt-4">Fast Delivery</h3>
+          <p class="text-black mt-2">Get your orders delivered quickly and track them in real-time.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="cat" class="text-center py-12 bg-blue-500 text-white mt-10 px-4">
+      <h2 class="text-stone-200 text-lg">Shop by Category</h2>
+      <h1 class="text-3xl font-bold mt-2">Choose from Our <span class="text-black font-extrabold">Exclusive
+          Collections</span></h1>
+      <div class="flex flex-wrap justify-center gap-2 mt-6">
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a
+            href="#punjabi">Punjabi</a></button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a
+            href="#tshirt">T-Shirts</a></button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a
+            href="#gadgets">Gadgets</a></button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a href="#wrist-watches">Wrist
+            Watches</a></button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a
+            href="#sneakers">Sneakers</a></button>
+        <button class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a
+            href="#furniture">Furniture</a></button>
+      </div>
+    </section>
+
+    <!-- Product Display -->
+    <div id="product-container" class="container mt-10 max-w-full px-4">
+
+      <!-- Punjabi/T-Shirts -->
+      <div id="punjabi" class="bg-gradient-to-br from-red-500 to-blue-600 shadow-md px-4 py-6 mb-15 rounded-lg">
+        <h2 class="text-black font-sans text-3xl sm:text-4xl lg:text-5xl font-extrabold italic mb-6 text-center">
+          Mens Premium Punjabi
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Product 1 -->
+          <div class="bg-gray-400 p-4 rounded-lg transition-transform duration-300 hover:scale-105">
+            <img src="../image/pun1.jpg" alt="Mens Premium Panjabi - Nafar" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 text-center sm:text-left text-black">Mens Premium Panjabi - Nafar
+            </h3>
+            <ul class="text-black space-y-2 mt-2">
+              <li><span class="font-semibold">Fabric Type:</span> Jacquard Dobby Cotton</li>
+              <li><span class="font-semibold">Type:</span> Regular Fit</li>
+              <li><span class="font-semibold">Weave:</span> Plain Weave</li>
+              <li><span class="font-semibold">Texture:</span> Soft and smooth with a matte finish</li>
+              <li><span class="font-semibold">Breathability:</span> Highly breathable and comfortable</li>
+              <li><span class="font-semibold">Durability:</span> Durable and long-lasting</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳1990</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-5 h-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l1.2 6.4m.8 4.6h9.6m1.2-4.6L20 5h-5m-4 0h4m0 0v4m0 0H9.4M5 10h14m-2 4a2 2 0 11-4 0 2 2 0 014 0zm-8 0a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="bg-gray-400 p-4 rounded-lg transition-transform duration-300 hover:scale-105">
+            <img src="../image/pun2.jpg" alt="Mens Premium Panjabi - Rizaian" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 text-center sm:text-left">Mens Premium Panjabi - Rizaian</h3>
+            <ul class="text-black space-y-2 mt-2">
+              <li><span class="font-semibold">Fabric Type:</span> Majestic All Over Design</li>
+              <li><span class="font-semibold">Type:</span> Regular Fit</li>
+              <li><span class="font-semibold">Texture:</span> Soft and smooth with a matte finish</li>
+              <li><span class="font-semibold">Breathability:</span> Highly breathable and comfortable</li>
+              <li><span class="font-semibold">Durability:</span> Durable and long-lasting</li>
+              <li><span class="font-semibold">Design:</span> Solid patterns with a uniform appearance</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳2550</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-5 h-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l1.2 6.4m.8 4.6h9.6m1.2-4.6L20 5h-5m-4 0h4m0 0v4m0 0H9.4M5 10h14m-2 4a2 2 0 11-4 0 2 2 0 014 0zm-8 0a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="bg-gray-400 p-4 rounded-lg transition-transform duration-300 hover:scale-105">
+            <img src="../image/pun3.jpg" alt="Mens Premium Panjabi - Aswad" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 text-center sm:text-left">Mens Premium Panjabi - Aswad</h3>
+            <ul class="text-black space-y-2 mt-2">
+              <li><span class="font-semibold">Fabric Type:</span> Jacquard Dobby Cotton</li>
+              <li><span class="font-semibold">Type:</span> Regular Fit</li>
+              <li><span class="font-semibold">Weave:</span> Plain Weave</li>
+              <li><span class="font-semibold">Texture:</span> Soft and smooth with a matte finish</li>
+              <li><span class="font-semibold">Breathability:</span> Highly breathable and comfortable</li>
+              <li><span class="font-semibold">Durability:</span> Durable and long-lasting</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳2250</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                class="w-5 h-5 mr-2">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 3h2l1.2 6.4m.8 4.6h9.6m1.2-4.6L20 5h-5m-4 0h4m0 0v4m0 0H9.4M5 10h14m-2 4a2 2 0 11-4 0 2 2 0 014 0zm-8 0a2 2 0 11-4 0 2 2 0 014 0z">
+                </path>
+              </svg>
+              Buy Now
+            </button>
+          </div>
+        </div>
+
+        <div id="tshirt" class="mt-10 mb-10 rounded-lg p-4">
+          <h2 class="text-black font-sans text-3xl sm:text-4xl lg:text-5xl font-extrabold italic mb-8 text-center">
+            Mens Premium T-Shirts
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Product 1 -->
+            <div class="bg-gray-400 p-4 rounded-lg transition-transform duration-300 hover:scale-105">
+              <img src="../image/TShirt1.jpg" alt="Mens Premium T-Shirt - Winsome" class="w-full rounded-lg">
+              <h3 class="text-lg font-extrabold mt-2 text-center sm:text-left">Mens Premium Drop Shoulder T-shirt -
+                Winsome</h3>
+              <ul class="text-black space-y-2 mt-12">
+                <li><span class="font-semibold">Fabric Type:</span> Rib, GSM : 300-310</li>
+                <li><span class="font-semibold">Printed:</span> Drop shoulder design that flatters every body type.</li>
+                <li><span class="font-semibold">Style:</span> Loose fit</li>
+                <li><span class="font-semibold">Color:</span> Steller</li>
+                <li><span class="font-semibold">Durability:</span> Durable and long-lasting</li>
+              </ul>
+              <p class="text-black text-2xl font-bold text-center mt-8">৳1440</p>
+              <button
+                class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+                Buy Now
+              </button>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-gray-400 p-4 rounded-lg transition-transform duration-300 hover:scale-105">
+              <img src="../image/TShirt2.jpg" alt="Mens Premium T-Shirt - Winsome" class="w-full rounded-lg">
+              <h3 class="text-lg font-extrabold mt-2 text-center sm:text-left">Mens Premium T-Shirt - Winsome</h3>
+              <ul class="text-black space-y-2 mt-18">
+                <li>Organic Ringspun Combed Compact Cotton</li>
+                <li>100% Cotton</li>
+                <li>Regular fit, Crew Neck Mid-weight, 5.16 oz/yd² (~175GSM)</li>
+                <li>Reactive Dye, enzyme and silicon washed</li>
+                <li>Preshrunk to minimize shrinkage</li>
+              </ul>
+              <p class="text-black text-2xl font-bold text-center mt-10">৳649</p>
+              <button
+                class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+                Buy Now
+              </button>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="bg-gray-400 p-4 rounded-lg transition-transform duration-300 hover:scale-105">
+              <img src="../image/TShirt3.jpg" alt="Mens Premium T-Shirt - Genesis" class="w-full rounded-lg">
+              <h3 class="text-lg font-extrabold mt-2 text-center sm:text-left">Mens Premium T-Shirts - Genesis</h3>
+              <ul class="text-black space-y-2 mt-2">
+                <li>Organic Ringspun Combed Compact Cotton</li>
+                <li>100% Cotton</li>
+                <li>Regular fit, Crew Neck Mid-weight, 5.16 oz/yd² (~175GSM)</li>
+                <li>Reactive Dye, enzyme and silicon washed</li>
+                <li>Preshrunk to minimize shrinkage</li>
+                <li>Design panels all are fabric; cut and sew</li>
+                <li>Typography & artworks are normal/high density screenprint</li>
+              </ul>
+              <p class="text-black text-2xl font-bold text-center mt-4">৳690</p>
+              <button
+                class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="gadjets" class="bg-gradient-to-bl from-yellow-500 to-red-700 shadow-md px-4 py-10">
+        <h2
+          class="text-white font-sans text-5xl font-extrabold italic mb-10 transition-transform duration-300 hover:scale-110 text-center">
+          Latest Gadgets
+        </h2>
+
+        <!-- Grid for Gadgets -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Mobile -->
+          <div class="bg-gray-300 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Samsung-S24-Ultra-Titanium-Grey.jpg" alt="Smartphone" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Samsung Galaxy S24 Ultra</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Display:</span> 6.7" AMOLED, 120Hz</li>
+              <li><span class="font-semibold">Processor:</span> Snapdragon 8 Gen 2</li>
+              <li><span class="font-semibold">Battery:</span> 5000mAh, Fast Charging</li>
+              <li><span class="font-semibold">Camera:</span> 108MP Triple Lens</li>
+              <li><span class="font-semibold">Storage:</span> 256GB, 12GB RAM</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳75,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Laptop -->
+          <div class="bg-gray-300 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Asus Laptop.jpg" alt="Laptop" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Asus ROG Strix Scar 16</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Display:</span> 16" QHD, 165Hz</li>
+              <li><span class="font-semibold">Processor:</span> Intel Core i9 14th Gen</li>
+              <li><span class="font-semibold">RAM:</span> 32GB DDR5</li>
+              <li><span class="font-semibold">Storage:</span> 1TB NVMe SSD</li>
+              <li><span class="font-semibold">Graphics:</span> NVIDIA RTX 4090</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳250,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Earbuds -->
+          <div class="bg-gray-300 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/sony_wf1000xm5.jpeg" alt="Earbuds" class="w-full mt-5 rounded-lg">
+            <h3 class="text-lg font-extrabold mt-10 pl-4">Sony WF-1000XM5 Earbuds</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Battery Life:</span> Up to 36 Hours</li>
+              <li><span class="font-semibold">Noise Cancellation:</span> Active ANC</li>
+              <li><span class="font-semibold">Water Resistance:</span> IPX7</li>
+              <li><span class="font-semibold">Connectivity:</span> Bluetooth 5.3</li>
+              <li><span class="font-semibold">Charging:</span> Wireless & USB-C Fast Charge</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳8,500</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="wrist-watches" class="bg-gradient-to-bl from-gray-700 to-black shadow-md mt-15 px-4 py-10">
+        <h2
+          class="text-white font-sans text-5xl font-extrabold italic mb-10 transition-transform duration-300 hover:scale-110 text-center">
+          Premium Wrist Watches
+        </h2>
+
+        <!-- Grid for Watches -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Hublot Watch 1 -->
+          <div class="bg-gray-300 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Hublot_bigbang1.jpg" alt="Hublot Big Bang" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Hublot Big Bang</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Case Material:</span> Carbon Fiber or Ceramic</li>
+              <li><span class="font-semibold">Movement:</span> Automatic Chronograph</li>
+              <li><span class="font-semibold">Water Resistance:</span> 100m</li>
+              <li><span class="font-semibold">Strap:</span> Rubber</li>
+              <li><span class="font-semibold">Glass:</span> Sapphire Crystal</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳1,200,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Hublot Watch 2 -->
+          <div class="bg-gray-300 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Hublot_fusion.jpg" alt="Hublot Classic Fusion" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Hublot Classic Fusion</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Case Material:</span> King Gold</li>
+              <li><span class="font-semibold">Movement:</span> Self-Winding</li>
+              <li><span class="font-semibold">Water Resistance:</span> 50m</li>
+              <li><span class="font-semibold">Strap:</span> Leather</li>
+              <li><span class="font-semibold">Glass:</span> Sapphire Crystal</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳950,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Titan Watch -->
+          <div class="bg-gray-300 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Titan_Grandmaster.webp" alt="Titan Grandmaster" class="mt-4 w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Titan Grandmaster</h3>
+            <ul class="text-black space-y-2 px-4 mt-4">
+              <li><span class="font-semibold">Case Material:</span> Stainless Steel</li>
+              <li><span class="font-semibold">Movement:</span> Quartz Chronograph</li>
+              <li><span class="font-semibold">Water Resistance:</span> 100m</li>
+              <li><span class="font-semibold">Strap:</span> Stainless Steel</li>
+              <li><span class="font-semibold">Glass:</span> Mineral Glass</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳25,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="sneakers" class="bg-gradient-to-br from-cyan-500 to-lime-500 shadow-md mt-15 px-4 py-10">
+        <h2
+          class="text-rose-600 font-sans text-5xl font-extrabold italic mb-10 transition-transform duration-300 hover:scale-110 text-center">
+          Premium Sneakers
+        </h2>
+
+        <!-- Grid for Sneakers -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Apex Sneaker 1 -->
+          <div class="bg-gray-200 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Apex_Air_Flex.jpg" alt="Apex Air Flex" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Apex Air Flex</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Material:</span> Mesh & Synthetic Leather</li>
+              <li><span class="font-semibold">Sole:</span> Rubber</li>
+              <li><span class="font-semibold">Closure:</span> Lace-Up</li>
+              <li><span class="font-semibold">Comfort:</span> Cushioned Insole</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳5,500</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Apex Sneaker 2 -->
+          <div class="bg-gray-200 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Apex_Sprint_Pro.jpeg" alt="Apex Sprint Pro" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Apex Sprint Pro</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Material:</span> Flyknit Fabric</li>
+              <li><span class="font-semibold">Sole:</span> EVA Foam</li>
+              <li><span class="font-semibold">Closure:</span> Slip-On</li>
+              <li><span class="font-semibold">Comfort:</span> Arch Support</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳6,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Bata Sneaker -->
+          <div class="bg-gray-200 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Bata_Street_Runner.jpg" alt="Bata Street Runner" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Bata Street Runner</h3>
+            <ul class="text-black space-y-2 mt-2 px-4">
+              <li><span class="font-semibold">Material:</span> Leather & Textile</li>
+              <li><span class="font-semibold">Sole:</span> TPR</li>
+              <li><span class="font-semibold">Closure:</span> Velcro & Lace Combo</li>
+              <li><span class="font-semibold">Comfort:</span> Memory Foam Insole</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳4,200</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="furniture" class="bg-gradient-to-bl from-emerald-700 to-purple-500 shadow-md px-4 mt-15 py-10">
+        <h2
+          class="text-neutral-50 font-sans text-5xl font-extrabold italic mb-10 transition-transform duration-300 hover:scale-110 text-center">
+          Premium Furniture by Hatil
+        </h2>
+
+        <!-- Grid for Furniture -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Hatil Sofa -->
+          <div class="bg-gray-200 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Hatil_Cozy_Sofa.jpg" alt="Hatil Cozy Sofa" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Hatil Cozy Sofa</h3>
+            <ul class="text-black space-y-2 px-4">
+              <li><span class="font-semibold">Material:</span> Solid Wood & Fabric</li>
+              <li><span class="font-semibold">Seating:</span> 3-Seater</li>
+              <li><span class="font-semibold">Cushion:</span> High-Density Foam</li>
+              <li><span class="font-semibold">Color Options:</span> Yellow, Blue</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳25,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Hatil Dining Table -->
+          <div class="bg-gray-200 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Hatil__Classic__Dining.jpg" alt="Hatil Classic Dining" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Hatil Classic Dining</h3>
+            <ul class="text-black space-y-2 px-4">
+              <li><span class="font-semibold">Material:</span> Mahogany Wood</li>
+              <li><span class="font-semibold">Capacity:</span> 6 Seater</li>
+              <li><span class="font-semibold">Finish:</span> Matte Polish</li>
+              <li><span class="font-semibold">Includes:</span> Table & 6 Chairs</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳40,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+
+          <!-- Hatil Bookshelf -->
+          <div class="bg-gray-200 transition-transform duration-300 hover:scale-105 p-5 rounded-lg">
+            <img src="../image/Hatil_Elegant_Bookshelf.jpg" alt="Hatil Elegant Bookshelf" class="w-full rounded-lg">
+            <h3 class="text-lg font-extrabold mt-2 pl-4">Hatil Elegant Bookshelf</h3>
+            <ul class="text-black space-y-2 px-4">
+              <li><span class="font-semibold">Material:</span> Engineered Wood</li>
+              <li><span class="font-semibold">Shelves:</span> 5-Tier Storage</li>
+              <li><span class="font-semibold">Finish:</span> Walnut Brown</li>
+              <li><span class="font-semibold">Design:</span> Modern Minimalist</li>
+            </ul>
+            <p class="text-black text-2xl font-bold text-center mt-4">৳12,000</p>
+            <button
+              class="bg-black text-white px-4 py-2 mt-3 rounded flex items-center justify-center w-full hover:bg-gray-800">
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </section>
+
+
+      <section id="about-us" class="bg-gray-700 py-16 mt-20 px-6">
+        <h2
+          class="text-white font-sans text-5xl font-extrabold transition-transform duration-300 hover:scale-120 text-center mb-12">
+          About Us
+        </h2>
+
+        <!-- Grid for Team Members -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Owner / CEO -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105">
+            <img src="../image/sujoy.jpg" alt="John Doe - CEO" class="w-40 h-40 mx-auto rounded-full mb-4">
+            <h3 class="text-xl font-bold">Sujoy Sarkar</h3>
+            <p class="text-gray-500 text-sm">Founder & CEO</p>
+            <p class="mt-3 text-gray-700 text-justify">
+              Sujoy Sarkar is the visionary leader behind our company, bringing over 5 years of industry experience. His
+              innovative mindset drives us towards success.
+            </p>
+          </div>
+
+          <!-- Marketing Head -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105">
+            <img src="../image/Marketing_dept.jpg" alt="Jane Smith - Marketing Head"
+              class="w-40 h-40 mx-auto rounded-full mb-4">
+            <h3 class="text-xl font-bold">Jane Smith</h3>
+            <p class="text-gray-500 text-sm">Marketing Head</p>
+            <p class="mt-3 text-gray-700 text-justify">
+              Jane is responsible for our brand presence and customer engagement strategies. Her expertise in digital
+              marketing has boosted our outreach significantly.
+            </p>
+          </div>
+
+          <!-- Lead Developer -->
+          <div class="bg-white shadow-lg rounded-lg p-6 text-center transition-transform duration-300 hover:scale-105">
+            <img src="../image/Lead_Developer.jpg" alt="Mike Johnson - Lead Developer"
+              class="w-40 h-40 mx-auto rounded-full mb-4">
+            <h3 class="text-xl font-bold">Mike Johnson</h3>
+            <p class="text-gray-500 text-sm">Lead Developer</p>
+            <p class="mt-3 text-gray-700 text-justify">
+              Mike is the backbone of our tech team, leading software development with cutting-edge solutions. His
+              coding skills ensure smooth functionality for our products.
+            </p>
+          </div>
+        </div>
+
+        <p class="mt-10 text-center text-white text-xl">
+          Our company is a leading eCommerce platform dedicated to providing top-quality products with seamless shopping
+          experiences. We have successfully built a strong brand reputation by prioritizing customer satisfaction and
+          leveraging innovative solutions. With a growing customer base and industry recognition, our journey toward
+          excellence continues.
+        </p>
+
+        <p class="mt-6 text-center text-white text-xl">
+          This is a public limited company having its registered and corporate office at Mirpur City of Dhaka,
+          Bangladesh. The company was incorporated in the same year 2022, and production commenced in 2024. This is one
+          of the fastest-growing Public Listed Companies in Dhaka.
+        </p>
+      </section>
+
+      <section id="contact" class="bg-gray-300 py-16 px-6 mt-20">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div>
+            <h2
+              class="text-gray-900 font-sans text-5xl font-extrabold transition-transform duration-300 hover:scale-110 pl-5 mb-6">
+              Contact Us
+            </h2>
+            <p class="text-gray-600 mb-6">Feel free to use the form or drop us an email. Old-fashioned phone calls work
+              too.</p>
+
+            <div class="space-y-4">
+              <div class="flex items-center space-x-4">
+                <span class="text-orange-500 text-xl">📞</span>
+                <p class="text-gray-700">123-456-7892</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <span class="text-orange-500 text-xl">✉️</span>
+                <p class="text-gray-700">csecomm@gmail.com</p>
+              </div>
+              <div class="flex items-center space-x-4">
+                <span class="text-orange-500 text-xl">📍</span>
+                <p class="text-gray-700">House #10, Road #5, Block C, Mirpur, Dhaka 1216, Bangladesh</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-gray-100 shadow-md p-8 rounded-lg">
+            <form>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label class="text-gray-700 font-semibold">Name</label>
+                  <input type="text" placeholder="First" class="w-full mt-1 p-2 border border-gray-300 rounded">
+                </div>
+                <div>
+                  <label class="text-gray-700 font-semibold">&nbsp;</label>
+                  <input type="text" placeholder="Last" class="w-full mt-1 p-2 border border-gray-300 rounded">
+                </div>
+              </div>
+
+              <div class="mt-4">
+                <label class="text-gray-700 font-semibold">Email</label>
+                <input type="email" placeholder="example@email.com"
+                  class="w-full mt-1 p-2 border border-gray-300 rounded">
+              </div>
+
+              <div class="mt-4">
+                <label class="text-gray-700 font-semibold">Phone (optional)</label>
+                <input type="text" placeholder="XXX-XXX-XXXX" class="w-full mt-1 p-2 border border-gray-300 rounded">
+              </div>
+
+              <div class="mt-4">
+                <label class="text-gray-700 font-semibold">Message</label>
+                <textarea placeholder="Type your message ..."
+                  class="w-full mt-1 p-2 border border-gray-300 rounded h-32"></textarea>
+              </div>
+
+              <button class="w-full bg-orange-500 text-white py-2 mt-4 rounded hover:bg-orange-600">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+  </body>
+
+  <footer class="bg-gray-800 py-8 text-gray-300">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+
+      <!-- Logo Section -->
+      <div class="flex items-center space-x-4">
+        <img src="../image/Fast_Delivery_truck.png" alt="Logo" class="w-50 h-20">
+      </div>
+
+      <!-- Copyright Text -->
+      <div class="text-center font-bold text-sm md:text-base mt-6 md:mt-0">
+        <p>©2025 CSE_Commerce. All Rights Reserved</p>
+        <div class="flex justify-center space-x-2">
+          <p class="text-gray-400 hover:text-gray-200 transition duration-300 cursor-pointer">
+            <a href="#">Terms of Use</a>
+          </p>
+          <p class="text-gray-400 hover:text-gray-200 transition duration-300 cursor-pointer">
+            <a href="#">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Social Icons -->
+      <div class="flex space-x-4 mt-4 md:mt-0">
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <i class="fab fa-facebook-f text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <i class="fab fa-twitter text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <i class="fab fa-linkedin-in text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <i class="fab fa-youtube text-xl"></i>
+        </a>
+        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+          <i class="fas fa-rss text-xl"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</html>
